@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="../static/css/new.css">
+</head>
+<body>
+    <header>
+        <h1>Thyroid Disease Classification Using Machine Learning</h1>
+    </header>
+
+  <nav>
+    <a href="/">home</a>
+    <a href="/logina">Login</a>
+  </nav>
+
+  <div class="container">
+    <h2>Login</h2>
+    <form action="/login" method="post">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <input type="submit" id="loginBtnu" value="Login">
+      <div>
+        <p>Don't have an account? <a href="/registera">create new account</a></p>
+        </div>
+    </form>
+  </div>
+</body>
+</html>

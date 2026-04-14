@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>output Page</title>
+  <link rel="stylesheet" href="../static/css/new.css">
+</head>
+<body>
+    <header>
+        <h1>Thyroid Disease Classification Using Machine Learning</h1>
+    </header>
+
+  <nav>
+    <a href="/">home</a>
+    <a href="/logina">Login</a>
+    <a href="/predicta">Predict</a>
+    <a href="/logouta">Logout</a>
+  </nav>
+
+<div class="container4">
+  <center>  
+    <h1 class="h1"> Thyroid Disease Result :</h1>
+
+  
+    {% if prediction %}
+    <font class="color-black">
+        <p>{{ prediction.p }}</p>
+    </font>
+    
+    <img src="{{prediction.image}}" alt="image" width="300" height="200">
+    <h1 class="h1"> Thyroid Disease  Status :</h1>
+    <p>{{prediction.data}}</p>
+    <h1 class="h1"> Description</h1>
+    <p>{{des}}</p>
+    <h1 class="h1"> Remedies</h1>
+    <p>{{rem}}</p>
+    
+    <h1 class="h1"> Exercise Recommendations</h1>
+    <p>{{exercise|safe}}</p>
+    
+    <h1 class="h1"> Diet Suggestions</h1>
+    <p>{{diet|safe}}</p>
+    
+    <h1 class="h1"> Precautions</h1>
+    <p>{{prec|safe}}</p>
+    
+    <h1 class="h1"> Food Avoidance</h1>
+    <p>{{avoid|safe}}</p>
+    
+    {% endif %}
+      </div>
+  
+   
+  </center>
+
+
+
+
+    
+ 
+
+</div>
+</body>
+</html>
